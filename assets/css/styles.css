@@ -1,0 +1,85 @@
+body {
+  transition: 0.2s;
+}
+.label {
+  background-color: #f8f9fa;
+  justify-content: space-between;
+  padding: 5px;
+  display: flex;
+  height: 26px;
+  width: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+.ball {
+  background-color: #2d383c;
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.2s linear;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkbox:checked + .label {
+  background-color: #343a40;
+}
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+  background-color: #f8f9fa;
+}
+
+.btn-style:hover {
+  background-color: #343a40 !important;
+}
+.card-color {
+  background-color: #2d383c;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+nav {
+  background-color: #343a40;
+}
+.lightmode nav,
+.lightmode .footer-dark {
+  background-color: #49d0ff;
+  border: 0;
+}
+.lightmode .nav-link,
+.lightmode .footer-text {
+  color: #f8f9fa !important;
+}
+.lightmode {
+  background: #f8f9fa !important;
+}
+.lightmode .bg-dark {
+  background: #f8f9fa !important;
+}
+.lightmode .card-section {
+  border-color: #343a40 !important;
+}
+.lightmode .text-light {
+  color: #343a40 !important;
+}
+.lightmode .card-color {
+  background-color: white !important ;
+}
+.cover {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .nav-switch {
+    padding-left: 0vh !important;
+  }
+  .cover {
+    display: none !important;
+  }
+  video {
+    width: "513" !important;
+  }
+}
